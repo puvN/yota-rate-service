@@ -58,9 +58,8 @@ public class Sim {
 
 	public Sim() {}
 
-	public Sim(long id, long iccid, int minutes, LocalDateTime minutesExpire, int gigabytes,
+	public Sim(long iccid, int minutes, LocalDateTime minutesExpire, int gigabytes,
 			   LocalDateTime gigabytesExpire, boolean active) {
-		this.id = id;
 		this.iccid = iccid;
 		this.minutes = minutes;
 		this.minutesExpire = minutesExpire;

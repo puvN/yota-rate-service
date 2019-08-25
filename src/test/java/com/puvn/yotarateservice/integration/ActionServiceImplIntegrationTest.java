@@ -47,7 +47,6 @@ class ActionServiceImplIntegrationTest {
 	@BeforeEach
 	void setUp() {
 		activeTestSim = new SimBuilder()
-				.id(1L)
 				.iccid(testIccid)
 				.active(true)
 				.minutes(90)

@@ -8,18 +8,12 @@ import java.time.LocalDateTime;
  * @author Eugeniy Lukin (eugeniylukin@gmail.com) created on 25.08.2019.
  */
 public class SimBuilder {
-	private long id;
 	private long iccid;
 	private int minutes;
 	private LocalDateTime minutesExpire;
 	private int gigabytes;
 	private LocalDateTime gigabytesExpire;
 	private boolean active;
-
-	public SimBuilder id(long id) {
-		this.id = id;
-		return this;
-	}
 
 	public SimBuilder iccid(long iccid) {
 		this.iccid = iccid;
@@ -51,6 +45,6 @@ public class SimBuilder {
 	}
 
 	public Sim build() {
-		return new Sim(id, iccid, minutes, minutesExpire, gigabytes, gigabytesExpire, active);
+		return new Sim(iccid, minutes, minutesExpire, gigabytes, gigabytesExpire, active);
 	}
 }
